@@ -1,8 +1,12 @@
+<p align="center">
+<img src="https://noshon.vercel.app/api/og.png" width="600">
+<br><br>
+<a href="https://noshon.vercel.app/" target="_blank" noopener noreferrer/>🔗 Visit</a>
+</p>
+
 # Noshon
 
 > The all-in-one rich-text editor 🚀
-
-> https://noshon.vercel.app/
 
 In this project, I tried to replicate some feature that is available in Notion, an amazing productivity and note-taking app.
 
