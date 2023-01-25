@@ -119,16 +119,14 @@ const Home = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="/api/og" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="600" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Noshon - The all-in-one rich-text editor" />
+        <meta name="og:title" content="Noshon - The all-in-one rich-text editor" />
         <meta
-          name="twitter:description"
+          name="og:description"
           content="The all-in-one rich-text editor which tries to replicate some feature of Notion."
         />
-        <meta name="twitter:image" content="/api/og" />
+        <meta property="og:image" content="https://noshon.vercel.app/api/og.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://noshon.vercel.app/api/og.png" />
       </Head>
 
       {/* Top Navigation */}
