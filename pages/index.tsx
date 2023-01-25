@@ -113,8 +113,13 @@ const Home = () => {
     <>
       <Head>
         <title>Noshon - The all-in-one rich-text editor.</title>
+        <meta
+          name="description"
+          content="The all-in-one rich-text editor which tries to replicate some feature of Notion."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content="/api/og" />
       </Head>
 
       {/* Top Navigation */}
