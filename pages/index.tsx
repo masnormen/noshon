@@ -112,7 +112,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Noshon - The all-in-one rich-text editor.</title>
+        <title>Noshon - The all-in-one rich-text editor</title>
         <meta
           name="description"
           content="The all-in-one rich-text editor which tries to replicate some feature of Notion."
@@ -122,6 +122,13 @@ const Home = () => {
         <meta property="og:image" content="/api/og" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Noshon - The all-in-one rich-text editor" />
+        <meta
+          name="twitter:description"
+          content="The all-in-one rich-text editor which tries to replicate some feature of Notion."
+        />
+        <meta name="twitter:image" content="/api/og" />
       </Head>
 
       {/* Top Navigation */}
