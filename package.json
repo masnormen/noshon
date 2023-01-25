@@ -1,0 +1,38 @@
+{
+  "name": "noshon",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "image-extensions": "^1.1.0",
+    "next": "13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "slate": "^0.87.0",
+    "slate-history": "^0.86.0",
+    "slate-hotkeys": "^0.2.11",
+    "slate-react": "^0.88.0",
+    "tailwind-merge": "^1.8.1",
+    "typescript": "4.9.4",
+    "zustand": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.1.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-tailwindcss": "^3.8.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.1",
+    "tailwindcss": "^3.2.4"
+  }
+}
