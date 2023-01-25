@@ -1,4 +1,4 @@
-import { KeyboardEventHandler, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { KeyboardEventHandler, useCallback, useMemo, useRef, useState } from 'react';
 import Head from 'next/head';
 import { createEditor, Descendant, Editor, Range, Transforms } from 'slate';
 import { Slate, Editable, withReact, RenderElementProps, RenderLeafProps, DefaultLeaf, ReactEditor } from 'slate-react';
@@ -14,7 +14,7 @@ import UtilButton from '../components/UtilButton';
 import ElementWrapper from '../components/ElementWrapper';
 import FormatToolbar from '../components/FormatToolbar';
 
-import { CustomElement, CustomElementStrings, CustomMarkupStrings } from '../types/slate';
+import { CustomElementStrings, CustomMarkupStrings } from '../types/slate';
 
 const Home = () => {
   const [title, setTitle] = useState<string>('Noshon');
@@ -102,13 +102,6 @@ const Home = () => {
     [editor]
   );
 
-  const [val, setVal] = useState<string>('');
-
-  useEffect(() => {
-    const [match] = Array.from(Editor.nodes(editor, { mode: 'all', match: () => true }));
-    setVal(JSON.stringify((match?.[0] as CustomElement)?.children));
-  }, [title, editor]);
-
   return (
     <>
       <Head>
@@ -141,7 +134,9 @@ const Home = () => {
           <UtilButton>{title ? title : 'Untitled'}</UtilButton>
         </div>
         <div>
-          <UtilButton>Share the ❤️</UtilButton>
+          <a href="https://github.com/masnormen/noshon" target="_blank" rel="noreferrer">
+            <UtilButton>GitHub ❤️</UtilButton>
+          </a>
         </div>
       </nav>
 
@@ -200,7 +195,7 @@ const Home = () => {
         </article>
 
         <div className="h-full w-full space-y-4 p-8 text-center">
-          <pre className="font-bold">{JSON.stringify(val, null, 2)}</pre>
+          <pre className="font-bold">Nourman Hajar</pre>
         </div>
       </main>
     </>
@@ -208,12 +203,17 @@ const Home = () => {
 };
 
 const initialValue: Descendant[] = [
+  {
+    type: 'image',
+    url: 'https://noshon.vercel.app/api/og.png',
+    children: [{ text: '' }],
+  },
   { type: 'quote', children: [{ text: 'The all-in-one rich-text editor 🚀' }] },
   {
     type: 'plain',
     children: [
       {
-        text: 'In this project, I tried to replicate some feature that is available in Notion, an amazing productivity and note-taking app.This page will give you a showcase of how you can use this rich text editor.',
+        text: 'In this project, I tried to replicate some feature that is available in Notion, an amazing productivity and note-taking app. This page will give you a showcase of how you can use this rich text editor.',
       },
     ],
   },
