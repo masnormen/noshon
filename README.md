@@ -8,6 +8,10 @@ In this project, I tried to replicate some feature that is available in Notion, 
 
 ## Features
 
+| <img src="https://user-images.githubusercontent.com/3425302/214548924-28bac3d0-fb4f-4f24-81b7-4357c86e3efd.gif" width="300"> | <img src="https://user-images.githubusercontent.com/3425302/214549665-c6dcfe69-53f4-4c74-80e8-e3c0621ab604.gif" width="300"> | <img src="https://user-images.githubusercontent.com/3425302/214550524-c8d3e948-2bb5-4209-8627-0c5e8eac2519.gif" width="300"> |
+| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
+|                       Markup editing              | Block editing | Image inserting (pasting URL)
+
 - ✍️ Basic markups (bold, italic, underline, strikethrough, code snippet)
 - 📄 Basic blocks (heading blocks, code blocks, quote, todos, divider)
 - 🖼️ Image support (insert image by pasting the source URL 🔗 or drag them to the editor)
